@@ -13,19 +13,19 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: tInfo('email.title'),
-      value: 'contact@pokygroup.com',
+      value: 'info@pokygroup.com',
       description: tInfo('email.description')
     },
     {
       icon: Phone,
       title: tInfo('phone.title'),
-      value: '+32 465 75 33 38',
+      value: '+237 87777700',
       description: tInfo('phone.description')
     },
     {
       icon: MapPin,
       title: tInfo('location.title'),
-      value: 'Bruxelles, rue Vital Francoisse, PO 6001 Macinelle',
+      value: 'POKY GROUP SAS, adresse BP8650 ΜΑΚΕPE RHONE POULENC, Douala Littoral Cameroun',
       description: tInfo('location.description')
     },
     {

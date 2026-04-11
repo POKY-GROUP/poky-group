@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
+import { notFound } from 'next/navigation';
 import { ThemeProvider } from '@/lib/theme-provider';
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
@@ -10,12 +11,14 @@ import { Analytics } from '@/components/analytics';
 import { PerformanceOptimizer } from '@/components/performance-optimizer';
 import "../globals.css";
 
+const SUPPORTED_LOCALES = ['en', 'fr'] as const;
+
 export const metadata: Metadata = {
   title: {
     default: "POKY GROUP - Innovative Solutions for Modern Business",
     template: "%s | POKY GROUP"
   },
-  description: "We build custom software, AI-driven solutions, and cloud integrations that drive growth and efficiency. Serving clients in Brussels.",
+  description: "We build custom software, AI-driven solutions, and cloud integrations that drive growth and efficiency. Serving clients in Douala, Littoral, Cameroon.",
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
@@ -30,8 +33,8 @@ export const metadata: Metadata = {
     "business automation",
     "software consulting",
     "tech solutions",
-    "Brussels",
-    "Belgium"
+    "Douala",
+    "Cameroon"
   ],
   authors: [{ name: "POKY GROUP" }],
   creator: "POKY GROUP",
@@ -96,6 +99,11 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const isValidLocale = SUPPORTED_LOCALES.includes(locale as (typeof SUPPORTED_LOCALES)[number]);
+
+  if (!isValidLocale) {
+    notFound();
+  }
 
   // Providing all messages to the client
   // side is the easiest way to get started

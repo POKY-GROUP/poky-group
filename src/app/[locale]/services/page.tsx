@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Services - Custom Software Development & AI Solutions',
-  description: 'Comprehensive software development services including custom applications, AI-driven solutions, cloud integration, and business automation. Expert development team in Brussels.',
+  description: 'Comprehensive software development services including custom applications, AI-driven solutions, cloud integration, and business automation. Expert development team in Douala, Littoral, Cameroon.',
   keywords: [
     'custom software development',
     'AI solutions',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     'web development services',
     'mobile app development',
     'software consulting',
-    'Brussels tech solutions'
+    'Douala tech solutions'
   ],
   openGraph: {
     title: 'Services - POKY GROUP',

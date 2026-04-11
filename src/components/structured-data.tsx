@@ -9,19 +9,19 @@ export function StructuredData() {
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "telephone": "+32-465-75-33-38",
+        "telephone": "+237-87777700",
         "contactType": "customer service",
-        "areaServed": "BE",
+        "areaServed": "CM",
         "availableLanguage": ["English", "French"]
       }
     ],
     "address": [
       {
         "@type": "PostalAddress",
-        "streetAddress": "rue Vital Francoisse",
-        "addressLocality": "Bruxelles",
-        "postalCode": "6001",
-        "addressCountry": "BE"
+        "streetAddress": "adresse BP8650 ΜΑΚΕPE RHONE POULENC",
+        "addressLocality": "Douala Littoral",
+        "postalCode": "BP8650",
+        "addressCountry": "CM"
       }
     ],
     "sameAs": [
@@ -69,7 +69,7 @@ export function StructuredData() {
       "name": "POKY GROUP"
     },
     "serviceType": "Software Development",
-    "areaServed": ["Belgium", "Worldwide"],
+    "areaServed": ["Cameroon", "Worldwide"],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Software Development Services",

@@ -1,10 +1,14 @@
 import { getRequestConfig } from 'next-intl/server'
 
-// Can be imported from a shared config
+const SUPPORTED_LOCALES = ['en', 'fr'] as const
+type SupportedLocale = (typeof SUPPORTED_LOCALES)[number]
 
 export default getRequestConfig(async ({ locale }) => {
-  // Use the provided locale or default to 'en'
-  const actualLocale = locale || 'en'
+  // Ensure we only ever import known locale files.
+  const actualLocale: SupportedLocale =
+    locale && SUPPORTED_LOCALES.includes(locale as SupportedLocale)
+      ? (locale as SupportedLocale)
+      : 'en'
 
   const messages = (await import(`./messages/${actualLocale}.json`)).default
 
