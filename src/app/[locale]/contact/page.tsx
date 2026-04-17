@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl'
 import { ContactForm } from '@/components/contact-form'
 import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin, Clock } from 'lucide-react'
+import { COMPANY_INFO } from '@/lib/company'
 
 export default function ContactPage() {
   const t = useTranslations('contact')
@@ -13,19 +14,19 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: tInfo('email.title'),
-      value: 'info@pokygroup.com',
+      value: COMPANY_INFO.email,
       description: tInfo('email.description')
     },
     {
       icon: Phone,
       title: tInfo('phone.title'),
-      value: '+237 87777700',
+      value: COMPANY_INFO.phone,
       description: tInfo('phone.description')
     },
     {
       icon: MapPin,
       title: tInfo('location.title'),
-      value: 'POKY GROUP SAS, adresse BP8650 ΜΑΚΕPE RHONE POULENC, Douala Littoral Cameroun',
+      value: `${COMPANY_INFO.legalName}, ${COMPANY_INFO.address}`,
       description: tInfo('location.description')
     },
     {

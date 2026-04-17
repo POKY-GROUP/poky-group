@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 import { usePathname } from 'next/navigation'
 import { Logo } from '@/components/logo'
+import { COMPANY_INFO } from '@/lib/company'
 
 export function Footer() {
   const tNav = useTranslations('navigation')
@@ -20,6 +21,14 @@ export function Footer() {
     { key: 'projects', href: `/${locale}/projects` },
     { key: 'blog', href: `/${locale}/blog` },
     { key: 'contact', href: `/${locale}/contact` },
+  ]
+
+  const legalLinks = [
+    { href: `/${locale}/legal-notice`, label: locale === 'fr' ? 'Mentions Legales' : 'Legal Notice' },
+    { href: `/${locale}/privacy-policy`, label: locale === 'fr' ? 'Confidentialite' : 'Privacy' },
+    { href: `/${locale}/terms-of-service`, label: locale === 'fr' ? 'Conditions' : 'Terms' },
+    { href: `/${locale}/data-deletion`, label: locale === 'fr' ? 'Suppression des Donnees' : 'Data Deletion' },
+    { href: `/${locale}/whatsapp-messaging-policy`, label: locale === 'fr' ? 'Politique WhatsApp' : 'WhatsApp Policy' },
   ]
 
   return (
@@ -66,15 +75,26 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">{tFooter('contact.title')}</h4>
             <div className="space-y-2 text-muted-foreground">
-              <p>{tFooter('contact.email')}</p>
-              <p>{tFooter('contact.phone')}</p>
-              <p>{tFooter('contact.location')}</p>
+              <p>Email: {COMPANY_INFO.email}</p>
+              <p>{locale === 'fr' ? 'Telephone' : 'Phone'}: {COMPANY_INFO.phone}</p>
+              <p>{locale === 'fr' ? 'Localisation' : 'Location'}: {COMPANY_INFO.address}</p>
             </div>
           </div>
         </div>
 
-        <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
+        <div className="border-t mt-8 pt-8 text-center text-muted-foreground space-y-3">
           <p>{tFooter('copyright')}</p>
+          <div className="flex flex-wrap justify-center gap-3 text-sm">
+            {legalLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="hover:text-primary transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </footer>
