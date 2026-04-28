@@ -15,8 +15,8 @@ const SUPPORTED_LOCALES = ['en', 'fr'] as const;
 
 export const metadata: Metadata = {
   title: {
-    default: "POKY GROUP - Innovative Solutions for Modern Business",
-    template: "%s | POKY GROUP"
+    default: "POKY GROUP SAS - Innovative Solutions for Modern Business",
+    template: "%s | POKY GROUP SAS"
   },
   description: "We build custom software, AI-driven solutions, and cloud integrations that drive growth and efficiency. Serving clients in Douala, Littoral, Cameroon.",
   icons: {
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
     "Douala",
     "Cameroon"
   ],
-  authors: [{ name: "POKY GROUP" }],
-  creator: "POKY GROUP",
-  publisher: "POKY GROUP",
+  authors: [{ name: "POKY GROUP SAS" }],
+  creator: "POKY GROUP SAS",
+  publisher: "POKY GROUP SAS",
   formatDetection: {
     email: false,
     address: false,
@@ -56,21 +56,21 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://pokygroup.com',
-    siteName: 'POKY GROUP',
-    title: 'POKY GROUP - Innovative Solutions for Modern Business',
+    siteName: 'POKY GROUP SAS',
+    title: 'POKY GROUP SAS - Innovative Solutions for Modern Business',
     description: 'We build custom software, AI-driven solutions, and cloud integrations that drive growth and efficiency.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'POKY GROUP - Innovative Solutions for Modern Business',
+        alt: 'POKY GROUP SAS - Innovative Solutions for Modern Business',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'POKY GROUP - Innovative Solutions for Modern Business',
+    title: 'POKY GROUP SAS - Innovative Solutions for Modern Business',
     description: 'We build custom software, AI-driven solutions, and cloud integrations that drive growth and efficiency.',
     images: ['/og-image.jpg'],
     creator: '@pokygroup',

@@ -77,7 +77,7 @@ export function generateBlogListMetadata(locale: string): Metadata {
       title,
       description,
       url: `${siteUrl}/${locale}/blog`,
-      siteName: "POKY GROUP",
+      siteName: "POKY GROUP SAS",
       locale,
       type: "website",
     },
@@ -96,11 +96,11 @@ export function generateCategoryMetadata(
 
   return {
     title,
-    description: `${title} - POKY GROUP Blog`,
+    description: `${title} - POKY GROUP SAS Blog`,
     openGraph: {
       title,
       url: `${siteUrl}/${locale}/category/${categoryName}`,
-      siteName: "POKY GROUP",
+      siteName: "POKY GROUP SAS",
       locale,
       type: "website",
     },
@@ -116,11 +116,11 @@ export function generateTagMetadata(tagName: string, locale: string): Metadata {
 
   return {
     title,
-    description: `${title} - POKY GROUP Blog`,
+    description: `${title} - POKY GROUP SAS Blog`,
     openGraph: {
       title,
       url: `${siteUrl}/${locale}/tag/${tagName}`,
-      siteName: "POKY GROUP",
+      siteName: "POKY GROUP SAS",
       locale,
       type: "website",
     },
@@ -139,11 +139,11 @@ export function generateAuthorMetadata(
 
   return {
     title,
-    description: `${title} - POKY GROUP Blog`,
+    description: `${title} - POKY GROUP SAS Blog`,
     openGraph: {
       title,
       url: `${siteUrl}/${locale}/author/${authorName}`,
-      siteName: "POKY GROUP",
+      siteName: "POKY GROUP SAS",
       locale,
       type: "profile",
     },

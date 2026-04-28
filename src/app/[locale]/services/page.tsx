@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     'Douala tech solutions'
   ],
   openGraph: {
-    title: 'Services - POKY GROUP',
+    title: 'Services - POKY GROUP SAS Software Solutions',
     description: 'Comprehensive software development services including custom applications, AI-driven solutions, cloud integration, and business automation.',
     url: '/services',
   },

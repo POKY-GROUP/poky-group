@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     'software case studies'
   ],
   openGraph: {
-    title: 'Projects - POKY GROUP Portfolio',
+    title: 'Projects - POKY GROUP SAS Portfolio',
     description: 'Explore our featured projects showcasing expertise in custom software development, AI solutions, and cloud integration.',
     url: '/projects',
   },

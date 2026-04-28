@@ -1,5 +1,5 @@
 export const COMPANY_INFO = {
-  brandName: 'POKY GROUP',
+  brandName: 'POKY GROUP SAS',
   legalName: 'POKY GROUP SAS',
   rccm: 'RCCM No. CM-DLA-01-2025-816-00022',
   email: 'info@pokygroup.com',

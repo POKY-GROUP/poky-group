@@ -33,7 +33,7 @@ export function Logo({ width = 120, height = 40, className = '' }: LogoProps) {
   return (
     <Image
       src={logoSrc}
-      alt="POKY GROUP"
+      alt="POKY GROUP SAS"
       width={width}
       height={height}
       priority

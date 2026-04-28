@@ -162,7 +162,7 @@
         "0": {
           "name": "Sarah Johnson",
           "role": "PDG, TechStart Inc.",
-          "content": "POKY GROUP a transformé notre entreprise avec leurs solutions IA innovantes. L'expertise et le dévouement de l'équipe ont dépassé nos attentes."
+          "content": "POKY GROUP SAS a transformé notre entreprise avec leurs solutions IA innovantes. L'expertise et le dévouement de l'équipe ont dépassé nos attentes."
         },
         "1": {
           "name": "Michael Chen",
@@ -236,7 +236,7 @@
       "phone": "Téléphone: +237 87777700",
       "location": "Localisation: POKY GROUP SAS, adresse BP8650 ΜΑΚΕPE RHONE POULENC, Douala Littoral Cameroun"
     },
-    "copyright": "© 2026 POKY GROUP. Tous droits réservés."
+    "copyright": "© 2026 POKY GROUP SAS. Tous droits réservés."
   },
   "theme": {
     "toggleTheme": "Changer de Thème",
@@ -286,11 +286,11 @@
     }
   },
   "about": {
-    "title": "À Propos de POKY GROUP",
+    "title": "À Propos de POKY GROUP SAS",
     "subtitle": "Autonomiser les entreprises grâce à des solutions technologiques innovantes",
     "hero": {
       "title": "Nous Construisons l'Avenir des Entreprises",
-      "description": "POKY GROUP est une entreprise technologique de premier plan spécialisée dans le développement de logiciels sur mesure, les solutions basées sur l'IA et les services d'intégration cloud. Nous aidons les entreprises à transformer leurs opérations et à atteindre leurs objectifs numériques grâce à une technologie de pointe."
+      "description": "POKY GROUP SAS est une entreprise technologique de premier plan spécialisée dans le développement de logiciels sur mesure, les solutions basées sur l'IA et les services d'intégration cloud. Nous aidons les entreprises à transformer leurs opérations et à atteindre leurs objectifs numériques grâce à une technologie de pointe."
     },
     "mission": {
       "title": "Notre Mission",
